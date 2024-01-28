@@ -1,14 +1,27 @@
 [package]
 name = "client"
-version = "0.1.0"
+version = "0.1.1-beta1"
 edition = "2021"
 authors = ["dravenk <longxianwen@outlook.com>"]
-# pro for rust
-description = "Blockchain and web3 client toolbox."
+description = "Decentralized chat client, including the client's main implementation and cli."
 readme = "README.md"
-repository = "https://github.com/dravenk/client/"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/dravenk/client/"
 documentation = "https://docs.rs/client"
-keywords = ["client", "mining", "coin", "blockchain", "web3"]
+keywords = ["chat", "light", "client",  "blockchain", "web3"]
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
+yew = { version = "0.21.0", features = ["csr"] }
+serde = { version = "1.0", features = ["derive"] }
+serde-wasm-bindgen = "0.6.2"
+web-sys = "0.3.66"
+js-sys = "0.3.66"
+wasm-logger = "0.2.0"
+wasm-bindgen-futures = "0.4.39"
+yew-router = "0.18.0"
+log = "0.4.20"
+cid = "0.11.0"
+multibase = "0.9.1"
+multihash = "0.19.1"
+wasm-bindgen = "0.2.90"
